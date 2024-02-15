@@ -1,3 +1,5 @@
+#This program utilizes the objects defined in Raytracing.py to define scenes and render them to .ppm image files.
+#This program can be used as an example of how to use the library.
 from Raytracing import *
 
 WIDTH = 320
