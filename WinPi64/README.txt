@@ -2,7 +2,7 @@ Link to project download:
 https://github.com/Xachaeus/WinPi64/releases/tag/v0.2.0-beta
 
 Link to project repository (does not contain full project due to size restrictions):
-
+https://github.com/Xachaeus/WinPi64
 
 WinPi64 is a project I developed for my class in Assembly to make it
 easier to write my own assembly code. My class was taught in 64-bit
@@ -23,6 +23,13 @@ from the OS image by QEMU for the emulation (kernal images, etc.),
 and a custom Python program I wrote to transfer files between the
 host computer and the virtual machine.
 
+The project was intended to be an easy-to-setup and easy-to-use tool
+so that anyone, including those with limited knowledge on setting up
+software, could use the tool. As such, all of the files are 
+pre-compressed into a .zip package, and all of the executables are
+pre-compiled, so that all someone has to do to use the tools are
+download the .zip, extract the files, and run.
+
 As mentioned above, the OS image has to be modified in order to run
 through QEMU, as the base image of Raspberry Pi OS (and its variants)
 do not contain a default username and password by themselves. This
@@ -38,6 +45,15 @@ necessary location. After adding some extra flags to my run script, the
 emulator could run successfully and could even use the host machine's
 internet connection, which was paramount to the functioning of my file
 transfer program.
+
+The source code for the transfer program can be found on the project
+repository; the release contains a pre-compiled executable of the 
+program (made with PyInstaller) for ease of use. The executable source
+code is slightly different in that it encodes the source code of the
+original into a base64 string and then calls exec() on the decoded
+string; this is to prevent issues with anti-virus software blocking
+the download (which likely happens due to the code making SFTP 
+connections).
 
 My file transfer program, written in Python, uses the SFTP suite of
 tools to transfer files to and from the virtual machine while it is
