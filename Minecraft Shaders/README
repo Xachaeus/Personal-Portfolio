@@ -2,7 +2,7 @@ This project is a functional Minecraft Shaderpack that I wrote as an
 introduction to graphics programming. In order to make this project,
 I had to learn a new programming language, as well as a completely
 new approach to programming, as the parallelization of GLSL required
-me to shift my thinking and approach to acheiving the look I wanted.
+me to shift my thinking and approach to acheive the look I wanted.
 
 To use the shaderpack, download the folder named "PersonalShader" as
 a .zip file or as a whole folder, and move it to the shaderpacks
