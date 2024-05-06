@@ -1,0 +1,44 @@
+This project is a functional Minecraft Shaderpack that I wrote as an
+introduction to graphics programming. In order to make this project,
+I had to learn a new programming language, as well as a completely
+new approach to programming, as the parallelization of GLSL required
+me to shift my thinking and approach to acheiving the look I wanted.
+
+To use the shaderpack, download the folder named "PersonalShader" as
+a .zip file or as a whole folder, and move it to the shaderpacks
+folder of your Minecraft Java installation as required by the graphics
+mod of your choice (OptiFine or Iris graphics mods are recommended).
+
+This project was a challenge for me, as I had to not only learn how
+the hardware graphics pipeline works, but also how the OptiFine
+rendering pipeline works. Custom shaders in minecraft are acheived
+through graphics mods like OptiFine, which replaces the vanilla
+rendering pipeline with a completely new one. The mod then allows
+users to use custom GLSL files for each step of the new pipeline,
+enabling programmers to completely change the way that the game looks.
+
+In essence, the OptiFine pipeline looks something like this:
+Shadow Pass -> gbuffers Pass -> Deferred Pass -> Composite Pass -> 
+Final Pass
+
+The shadow pass uses a shader to generate three textures, rendered from
+the perspective of the current light source (the sun or moon): a depth 
+map, a colored rendering of everything, and a colored rendering that
+ignores transparent blocks. The gbuffers shaders then run independently
+for each different type of object in the game, such as the terrain, 
+water, entities, the sky, etc. This allows programmers to tailor how
+different objects look (i.e. adding reflections to armor, ripples to
+water, etc.). The composite programs run in order after the gbuffers
+programs, starting at composite0, as full-screen passes. The deferred 
+passes run before the composite programs, and can be used for additional
+computation. Lastly, the final pass runs as a full-screen pass, and is 
+used for post-processing effects. 
+
+I used these programs to create a minimally-functional shader pack. Mine
+does not have any fancy effects for the water yet, though it does handle
+sunrises, sunsets, colored shadows, and renders the front and back sides
+of grass separately to more accurately reflect the translucency of grass.
+It still has some performance issues at sunrise and sunset, and some light
+leaks in caves, but is generally efficient and visually appealing. It was
+a very fun project to work on, and it taught me a lot about graphics
+programming and parallelized computing.
