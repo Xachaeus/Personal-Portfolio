@@ -41,3 +41,9 @@ The engine is also designed to be fully-implementable with other
 projects; it is object-oriented, meaning other developers could
 subclass the necessary objects for the engine to tweak and tailor the
 exact information they need for their games.
+
+The project required me to utilize several of the concepts I had learned
+in my CISC 220: Data Structures, such as efficiently allocating and
+deallocating memory for the world, and developing an algorithm to
+discern which tiles to process on a given frame. It was a fun project
+that I plan to build on in the future and possibly use for a future game.
