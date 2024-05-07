@@ -1,0 +1,18 @@
+# ninja log v5
+16	1009	7312926711060136	CMakeFiles/Winter2024GameProject.dir/src/World.cpp.obj	5786e5c5ac1dbe98
+0	168	7321803455889749	build.ninja	883b177c4e940c76
+28	819	7312926709164752	CMakeFiles/Winter2024GameProject.dir/src/Texture.cpp.obj	92a9ac5a64322f85
+946	1089	7315397989557573	Winter2024GameProject.exe	5b29bd306deee04d
+28	277	7315370787400652	CMakeFiles/Winter2024GameProject.dir/src/Math.cpp.obj	f8111a8c6cf520fc
+3	803	7312926709014020	CMakeFiles/Winter2024GameProject.dir/src/Display.cpp.obj	b0eca4f231418dda
+3	946	7315397988175774	CMakeFiles/Winter2024GameProject.dir/src/main.cpp.obj	1e01aedbd8a8959e
+22	1039	7312926711365092	CMakeFiles/Winter2024GameProject.dir/src/Camera.cpp.obj	5400a8f078d0bdea
+3	362	7315397569692413	CMakeFiles/Winter2024GameProject.dir/src/BoundingBox.cpp.obj	5a21511a4b2f8608
+53	228	7321804733102847	CMakeFiles/Winter2024GameProject.dir/src/Math.cpp.obj	1e9a32de651d03f0
+44	374	7321804734583462	CMakeFiles/Winter2024GameProject.dir/src/BoundingBox.cpp.obj	90def97d5db4cad0
+12	684	7321804737579914	CMakeFiles/Winter2024GameProject.dir/src/Display.cpp.obj	591384140bab0bf6
+19	688	7321804737718219	CMakeFiles/Winter2024GameProject.dir/src/Texture.cpp.obj	8deb1cea0f2e61cb
+0	815	7321804738993817	CMakeFiles/Winter2024GameProject.dir/src/main.cpp.obj	fc631675c0a1c6
+35	825	7321804739084027	CMakeFiles/Winter2024GameProject.dir/src/World.cpp.obj	57f97870cad22dcc
+27	825	7321804739091513	CMakeFiles/Winter2024GameProject.dir/src/Camera.cpp.obj	cac1cd1403885a1e
+825	1007	7321804740875667	Winter2024GameProject.exe	50e04afdc0e7afe0
