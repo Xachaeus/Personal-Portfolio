@@ -1,5 +1,7 @@
 Link to N-TEA specifications: https://docs.google.com/document/d/1tEcc_vdRTd_nN5Cux7oWXvK_KLFdmpyIQ8oaS4kIMKE/edit?usp=sharing
 
+Link to project preview: https://html-preview.github.io/?url=https://github.com/Xachaeus/Personal-Portfolio/blob/main/N-TEA/index.html
+
 N-TEA (Non-Trivial Educational Architecture) began as a summer project to help me
 build my understanding of computer architectures. The attatched HTML project includes
 an assembler for writing N-TEA programs, a window to demonstrate the results of the
