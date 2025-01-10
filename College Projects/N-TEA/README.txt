@@ -18,7 +18,7 @@ the constant values that are required for branching to occur properly. Finally, 
 resolved assembly is translated one-to-one into its binary representation.
 
 The simulated computer consists of 32 registers, 64 KiB of RAM, a specialized flag
-register, and a 16-bit I/O bus. When a compiled binary program is to be run, it is
+register, and a 32-bit I/O bus. When a compiled binary program is to be run, it is
 loaded into the beginning of memory, where the operating system code is run first.
 Currently, the OS only handles launching the user-written program, allocating and
 managing heap memory, and ending instruction execution once the program has finished.
