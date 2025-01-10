@@ -1,6 +1,6 @@
 This project is a functional Minecraft Shaderpack that I wrote as an
 introduction to graphics programming. In order to make this project,
-I had to learn a new programming language, as well as a completely
+I had to learn a new programming language and a completely
 new approach to programming, as the parallelization of GLSL required
 me to shift my thinking and approach to acheive the look I wanted.
 
