@@ -43,6 +43,7 @@
 <body>
   <script src="script.js"></script>
   <div class="toolbar">
+    <button onclick=quick_run()>Quick Run</button>
     <button onclick=preprocess_assembly()>Preprocess Program</button>
     <button onclick=resolve_assembly()>Resolve Program</button>
     <button onclick=translate_assembly()>Assemble Program</button>
@@ -75,11 +76,13 @@
     </div>
     <div class="column">
       <div class="toolbar">
-          <button onclick=parse_program()>Load Program</button>
+          <button onclick=parse_program()>Reset Program</button>
           <button onclick=do_next_step()>Step Program</button>
       </div>
     </div>
   </div>
+
+  <input type="file" id="fileInput" style="display: none;">
   
   
 </body>
