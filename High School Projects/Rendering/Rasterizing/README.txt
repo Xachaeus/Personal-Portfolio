@@ -23,16 +23,16 @@ utilized by every other object in the project.
 The Draw file defines functions for drawing triangles onto the screen. To rectreate
 the pixel-by-pixel drawing operations done in the GPU in an actual rendering engine,
 these functions mathematically determine which pixels need to be filled for a given
-line or triangle, and manually set the color of each pixel, one by one. This is
+line or triangle, and manually set the color of each pixel, one by one. This was
 not particularly necessary, but since this project was supposed to be a learning
 experience, I figured it would be best to do everything from scratch that I could.
 
 The Triangle file defines a Triangle object which stores three Vector3 objects as the
 vertices of the shape. It doesn't have any real methods, and basically just functions
-to organize data easier.
+to organize data more easily.
 
 The Box file allows a developer to define all of the triangles which make up a box
-simply by creating them automatically from a given position and given dimensions.
+simply by creating them automatically from a given position and dimensions.
 Again, though the Box object does define several triangles for the developer, it
 doesn't have any methods to use after the triangles have been defined, and again 
 acts primarily as data storage.
